@@ -1,0 +1,861 @@
+2019/11/14 12:05:51 [INFO] Terraform version: 0.12.14 dev 
+2019/11/14 12:05:51 [INFO] Go runtime version: go1.13.3
+2019/11/14 12:05:51 [INFO] CLI args: []string{"D:\\go_workspace\\bin\\terraform.exe", "apply"}
+2019/11/14 12:05:51 [DEBUG] Attempting to open CLI config file: C:\Users\bbehera\AppData\Roaming\terraform.rc
+2019/11/14 12:05:51 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/11/14 12:05:51 [DEBUG] checking for credentials in "C:\\Users\\bbehera\\AppData\\Roaming\\terraform.d\\plugins"
+2019/11/14 12:05:51 [DEBUG] checking for credentials in "C:\\Users\\bbehera\\AppData\\Roaming\\terraform.d\\plugins\\windows_amd64"
+2019/11/14 12:05:51 [INFO] CLI command args: []string{"apply"}
+2019/11/14 12:05:51 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2019/11/14 12:05:51 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2019/11/14 12:05:51 [DEBUG] New state was assigned lineage "71251fbc-342a-61a8-3a89-6e04a833d175"
+2019/11/14 12:05:51 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2019/11/14 12:05:51 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2019/11/14 12:05:51 [DEBUG] checking for provider in "."
+2019/11/14 12:05:51 [WARN] found legacy provider "terraform-provider-example.exe"
+2019/11/14 12:05:51 [DEBUG] checking for provider in "D:\\go_workspace\\bin"
+2019/11/14 12:05:51 [WARN] found legacy provider "terraform-provider-example"
+2019/11/14 12:05:51 [DEBUG] checking for provider in ".terraform\\plugins\\windows_amd64"
+2019/11/14 12:05:51 [DEBUG] checking for provider in "C:\\Users\\bbehera\\AppData\\Roaming\\terraform.d\\plugins"
+2019/11/14 12:05:51 [DEBUG] checking for provider in "C:\\Users\\bbehera\\AppData\\Roaming\\terraform.d\\plugins\\windows_amd64"
+2019/11/14 12:05:51 [WARN] found legacy provider "terraform-provider-example"
+2019/11/14 12:05:51 [DEBUG] found provider "terraform-provider-highbond_v0.0.3.exe"
+2019/11/14 12:05:51 [DEBUG] found valid plugin: "example", "0.0.0", "D:\\go_workspace\\src\\github.com\\terraform-provider-example\\terraform-provider-example.exe"
+2019/11/14 12:05:51 [DEBUG] found valid plugin: "highbond", "0.0.3", "C:\\Users\\bbehera\\AppData\\Roaming\\terraform.d\\plugins\\windows_amd64\\terraform-provider-highbond_v0.0.3.exe"
+2019/11/14 12:05:51 [DEBUG] checking for provisioner in "."
+2019/11/14 12:05:51 [DEBUG] checking for provisioner in "D:\\go_workspace\\bin"
+2019/11/14 12:05:51 [DEBUG] checking for provisioner in ".terraform\\plugins\\windows_amd64"
+2019/11/14 12:05:51 [DEBUG] checking for provisioner in "C:\\Users\\bbehera\\AppData\\Roaming\\terraform.d\\plugins"
+2019/11/14 12:05:51 [DEBUG] checking for provisioner in "C:\\Users\\bbehera\\AppData\\Roaming\\terraform.d\\plugins\\windows_amd64"
+2019/11/14 12:05:51 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2019/11/14 12:05:51 [INFO] backend/local: starting Apply operation
+2019/11/14 12:05:51 [TRACE] backend/local: requesting state manager for workspace "default"
+2019/11/14 12:05:51 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2019/11/14 12:05:51 [TRACE] backend/local: requesting state lock for workspace "default"
+2019/11/14 12:05:51 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2019/11/14 12:05:51 [TRACE] statemgr.Filesystem: existing snapshot has lineage "a3bef73c-250f-4b50-997a-8cda1203311d" serial 1
+2019/11/14 12:05:51 [TRACE] statemgr.Filesystem: locking terraform.tfstate using LockFileEx
+2019/11/14 12:05:51 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2019/11/14 12:05:51 [TRACE] backend/local: reading remote state for workspace "default"
+2019/11/14 12:05:51 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2019/11/14 12:05:51 [TRACE] statemgr.Filesystem: read snapshot with lineage "a3bef73c-250f-4b50-997a-8cda1203311d" serial 1
+2019/11/14 12:05:51 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2019/11/14 12:05:51 [TRACE] backend/local: building context for current working directory
+2019/11/14 12:05:51 [TRACE] terraform.NewContext: starting
+2019/11/14 12:05:51 [TRACE] terraform.NewContext: resolving provider version selections
+2019/11/14 12:05:51 [TRACE] terraform.NewContext: loading provider schemas
+2019/11/14 12:05:51 [TRACE] LoadSchemas: retrieving schema for provider type "example"
+2019-11-14T12:05:51.962+0530 [INFO]  plugin: configuring client automatic mTLS
+2019-11-14T12:05:51.982+0530 [DEBUG] plugin: starting plugin: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe args=[D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe]
+2019-11-14T12:05:51.985+0530 [DEBUG] plugin: plugin started: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=9260
+2019-11-14T12:05:51.985+0530 [DEBUG] plugin: waiting for RPC address: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe
+2019-11-14T12:05:52.205+0530 [INFO]  plugin.terraform-provider-example.exe: configuring server automatic mTLS: timestamp=2019-11-14T12:05:52.204+0530
+2019-11-14T12:05:52.226+0530 [DEBUG] plugin: using plugin: version=5
+2019-11-14T12:05:52.226+0530 [DEBUG] plugin.terraform-provider-example.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2019-11-14T12:05:52.226+0530
+2019/11/14 12:05:52 [TRACE] GRPCProvider: GetSchema
+2019/11/14 12:05:52 [TRACE] GRPCProvider: Close
+2019-11-14T12:05:52.281+0530 [DEBUG] plugin: plugin process exited: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=9260
+2019-11-14T12:05:52.281+0530 [DEBUG] plugin: plugin exited
+2019/11/14 12:05:52 [TRACE] terraform.NewContext: complete
+2019/11/14 12:05:52 [TRACE] backend/local: finished building terraform.Context
+2019/11/14 12:05:52 [TRACE] backend/local: requesting interactive input, if necessary
+2019/11/14 12:05:52 [TRACE] Context.Input: Prompting for provider arguments
+2019/11/14 12:05:52 [TRACE] Context.Input: Provider provider.example implied by resource block at main.tf:2,1-38
+2019/11/14 12:05:52 [TRACE] Context.Input: Input for provider.example: map[string]cty.Value{}
+2019/11/14 12:05:52 [TRACE] backend/local: running validation operation
+2019/11/14 12:05:52 [INFO] terraform: building graph: GraphTypeValidate
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2019/11/14 12:05:52 [TRACE] ConfigTransformer: Starting for path: 
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.LocalTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OutputTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.StateTransformer
+2019/11/14 12:05:52 [TRACE] StateTransformer: state is empty, so nothing to do
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2019/11/14 12:05:52 [TRACE] AttachResourceConfigTransformer: attaching to "example_server.my-server" (*terraform.NodeValidatableResource) config from main.tf:2,1-38
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+------
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2019/11/14 12:05:52 [DEBUG] adding implicit provider configuration provider.example, implied first by example_server.my-server
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2019/11/14 12:05:52 [TRACE] ProviderTransformer: example_server.my-server is provided by provider.example or inherited equivalent
+2019/11/14 12:05:52 [TRACE] ProviderTransformer: exact match for provider.example serving example_server.my-server
+2019/11/14 12:05:52 [DEBUG] ProviderTransformer: "example_server.my-server" (*terraform.NodeValidatableResource) needs provider.example
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2019/11/14 12:05:52 [TRACE] AttachSchemaTransformer: attaching resource schema to example_server.my-server
+2019/11/14 12:05:52 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.example
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2019/11/14 12:05:52 [DEBUG] ReferenceTransformer: "example_server.my-server" references: []
+2019/11/14 12:05:52 [DEBUG] ReferenceTransformer: "provider.example" references: []
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RootTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.example (close) - *terraform.graphNodeCloseProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+example_server.my-server - *terraform.NodeValidatableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeValidatableResource
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodeValidatableResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.example (close) - *terraform.graphNodeCloseProvider
+------
+2019/11/14 12:05:52 [DEBUG] Starting graph walk: walkValidate
+2019/11/14 12:05:52 [TRACE] dag/walk: updating graph
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "root"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "provider.example"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "provider.example (close)"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "provider.example (close)" waiting on "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "root" waiting on "provider.example (close)"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "example_server.my-server" waiting on "provider.example"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "provider.example (close)", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "example_server.my-server", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "provider.example"
+2019/11/14 12:05:52 [TRACE] vertex "provider.example": starting visit (*terraform.NodeApplyableProvider)
+2019/11/14 12:05:52 [TRACE] vertex "provider.example": evaluating
+2019/11/14 12:05:52 [TRACE] [walkValidate] Entering eval tree: provider.example
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2019-11-14T12:05:52.282+0530 [INFO]  plugin: configuring client automatic mTLS
+2019-11-14T12:05:52.304+0530 [DEBUG] plugin: starting plugin: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe args=[D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe]
+2019-11-14T12:05:52.307+0530 [DEBUG] plugin: plugin started: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=16428
+2019-11-14T12:05:52.307+0530 [DEBUG] plugin: waiting for RPC address: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe
+2019-11-14T12:05:52.553+0530 [INFO]  plugin.terraform-provider-example.exe: configuring server automatic mTLS: timestamp=2019-11-14T12:05:52.552+0530
+2019-11-14T12:05:52.574+0530 [DEBUG] plugin: using plugin: version=5
+2019-11-14T12:05:52.574+0530 [DEBUG] plugin.terraform-provider-example.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2019-11-14T12:05:52.574+0530
+2019/11/14 12:05:52 [TRACE] BuiltinEvalContext: Initialized "example" provider for provider.example
+2019/11/14 12:05:52 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalValidateProvider
+2019/11/14 12:05:52 [TRACE] buildProviderConfig for provider.example: no configuration at all
+2019/11/14 12:05:52 [TRACE] GRPCProvider: GetSchema
+2019/11/14 12:05:52 [TRACE] GRPCProvider: PrepareProviderConfig
+2019/11/14 12:05:52 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:05:52 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:05:52 [TRACE] [walkValidate] Exiting eval tree: provider.example
+2019/11/14 12:05:52 [TRACE] vertex "provider.example": visit complete
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": starting visit (*terraform.NodeValidatableResource)
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": evaluating
+2019/11/14 12:05:52 [TRACE] [walkValidate] Entering eval tree: example_server.my-server
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2019/11/14 12:05:52 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2019/11/14 12:05:52 [TRACE] [walkValidate] Exiting eval tree: example_server.my-server
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": visit complete
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "provider.example (close)"
+2019/11/14 12:05:52 [TRACE] vertex "provider.example (close)": starting visit (*terraform.graphNodeCloseProvider)
+2019/11/14 12:05:52 [TRACE] vertex "provider.example (close)": evaluating
+2019/11/14 12:05:52 [TRACE] [walkValidate] Entering eval tree: provider.example (close)
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:05:52 [TRACE] GRPCProvider: Close
+2019/11/14 12:05:52 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2019/11/14 12:05:52 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2019/11/14 12:05:52 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2019/11/14 12:05:52 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2019/11/14 12:05:52 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2019-11-14T12:05:52.626+0530 [DEBUG] plugin: plugin process exited: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=16428
+2019-11-14T12:05:52.626+0530 [DEBUG] plugin: plugin exited
+2019/11/14 12:05:52 [TRACE] [walkValidate] Exiting eval tree: provider.example (close)
+2019/11/14 12:05:52 [TRACE] vertex "provider.example (close)": visit complete
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "root"
+2019/11/14 12:05:52 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2019/11/14 12:05:52 [TRACE] vertex "root": visit complete
+2019/11/14 12:05:52 [INFO] backend/local: apply calling Refresh
+2019/11/14 12:05:52 [INFO] terraform: building graph: GraphTypeRefresh
+2019/11/14 12:05:52 [TRACE] No managed resources in state during refresh; skipping managed resource transformer
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2019/11/14 12:05:52 [TRACE] ConfigTransformer: Starting for path: 
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.StateTransformer
+2019/11/14 12:05:52 [TRACE] StateTransformer: state is empty, so nothing to do
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.LocalTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OutputTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RootTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+root - terraform.graphNodeRoot
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2019/11/14 12:05:52 [DEBUG] Starting graph walk: walkRefresh
+2019/11/14 12:05:52 [TRACE] dag/walk: updating graph
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "root"
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "root"
+2019/11/14 12:05:52 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2019/11/14 12:05:52 [TRACE] vertex "root": visit complete
+2019/11/14 12:05:52 [INFO] backend/local: apply calling Plan
+2019/11/14 12:05:52 [INFO] terraform: building graph: GraphTypePlan
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2019/11/14 12:05:52 [TRACE] ConfigTransformer: Starting for path: 
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.LocalTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OutputTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.StateTransformer
+2019/11/14 12:05:52 [TRACE] StateTransformer: state is empty, so nothing to do
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2019/11/14 12:05:52 [TRACE] AttachResourceConfigTransformer: attaching to "example_server.my-server" (*terraform.NodePlannableResource) config from main.tf:2,1-38
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+------
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2019/11/14 12:05:52 [DEBUG] adding implicit provider configuration provider.example, implied first by example_server.my-server
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2019/11/14 12:05:52 [TRACE] ProviderTransformer: example_server.my-server is provided by provider.example or inherited equivalent
+2019/11/14 12:05:52 [TRACE] ProviderTransformer: exact match for provider.example serving example_server.my-server
+2019/11/14 12:05:52 [DEBUG] ProviderTransformer: "example_server.my-server" (*terraform.NodePlannableResource) needs provider.example
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2019/11/14 12:05:52 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2019/11/14 12:05:52 [TRACE] AttachSchemaTransformer: attaching resource schema to example_server.my-server
+2019/11/14 12:05:52 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.example
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2019/11/14 12:05:52 [DEBUG] ReferenceTransformer: "example_server.my-server" references: []
+2019/11/14 12:05:52 [DEBUG] ReferenceTransformer: "provider.example" references: []
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2019/11/14 12:05:52 [TRACE] ForcedCBDTransformer: "example_server.my-server" (*terraform.NodePlannableResource) has no CBD descendent, so skipping
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RootTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.example (close) - *terraform.graphNodeCloseProvider
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodePlannableResource
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodePlannableResource
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.example (close) - *terraform.graphNodeCloseProvider
+------
+2019/11/14 12:05:52 [DEBUG] Starting graph walk: walkPlan
+2019/11/14 12:05:52 [TRACE] dag/walk: updating graph
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "provider.example (close)"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "root"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "provider.example"
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "example_server.my-server" waiting on "provider.example"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "provider.example (close)" waiting on "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "root" waiting on "provider.example (close)"
+2019/11/14 12:05:52 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "provider.example (close)", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: dependencies changed for "example_server.my-server", sending new deps
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "provider.example"
+2019/11/14 12:05:52 [TRACE] vertex "provider.example": starting visit (*terraform.NodeApplyableProvider)
+2019/11/14 12:05:52 [TRACE] vertex "provider.example": evaluating
+2019/11/14 12:05:52 [TRACE] [walkPlan] Entering eval tree: provider.example
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2019-11-14T12:05:52.626+0530 [INFO]  plugin: configuring client automatic mTLS
+2019-11-14T12:05:52.646+0530 [DEBUG] plugin: starting plugin: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe args=[D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe]
+2019-11-14T12:05:52.649+0530 [DEBUG] plugin: plugin started: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=22136
+2019-11-14T12:05:52.649+0530 [DEBUG] plugin: waiting for RPC address: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe
+2019-11-14T12:05:52.870+0530 [INFO]  plugin.terraform-provider-example.exe: configuring server automatic mTLS: timestamp=2019-11-14T12:05:52.869+0530
+2019-11-14T12:05:52.891+0530 [DEBUG] plugin: using plugin: version=5
+2019-11-14T12:05:52.891+0530 [DEBUG] plugin.terraform-provider-example.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2019-11-14T12:05:52.891+0530
+2019/11/14 12:05:52 [TRACE] BuiltinEvalContext: Initialized "example" provider for provider.example
+2019/11/14 12:05:52 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:05:52 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2019/11/14 12:05:52 [TRACE] buildProviderConfig for provider.example: no configuration at all
+2019/11/14 12:05:52 [TRACE] GRPCProvider: GetSchema
+2019/11/14 12:05:52 [TRACE] GRPCProvider: Configure
+2019/11/14 12:05:52 [TRACE] [walkPlan] Exiting eval tree: provider.example
+2019/11/14 12:05:52 [TRACE] vertex "provider.example": visit complete
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": starting visit (*terraform.NodePlannableResource)
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": evaluating
+2019/11/14 12:05:52 [TRACE] [walkPlan] Entering eval tree: example_server.my-server
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalWriteResourceState
+2019/11/14 12:05:52 [TRACE] [walkPlan] Exiting eval tree: example_server.my-server
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": expanding dynamic subgraph
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+example_server.my-server - *terraform.NodePlannableResourceInstance
+------
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2019/11/14 12:05:52 [DEBUG] Resource instance state not found for node "example_server.my-server", instance example_server.my-server
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2019/11/14 12:05:52 [DEBUG] ReferenceTransformer: "example_server.my-server" references: []
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] Executing graph transform *terraform.RootTransformer
+2019/11/14 12:05:52 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": entering dynamic subgraph
+2019/11/14 12:05:52 [TRACE] dag/walk: updating graph
+2019/11/14 12:05:52 [TRACE] dag/walk: added new vertex: "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": starting visit (*terraform.NodePlannableResourceInstance)
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": evaluating
+2019/11/14 12:05:52 [TRACE] [walkPlan] Entering eval tree: example_server.my-server
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalReadState
+2019/11/14 12:05:52 [TRACE] EvalReadState: reading state for example_server.my-server
+2019/11/14 12:05:52 [TRACE] EvalReadState: no state present for example_server.my-server
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalValidateSelfRef
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalDiff
+2019/11/14 12:05:52 [TRACE] Re-validating config for "example_server.my-server"
+2019/11/14 12:05:52 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2019/11/14 12:05:52 [TRACE] GRPCProvider: PlanResourceChange
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalCheckPreventDestroy
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalWriteState
+2019/11/14 12:05:52 [TRACE] EvalWriteState: writing current state object for example_server.my-server
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalWriteDiff
+2019/11/14 12:05:52 [TRACE] EvalWriteDiff: recorded Create change for example_server.my-server
+2019/11/14 12:05:52 [TRACE] [walkPlan] Exiting eval tree: example_server.my-server
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": visit complete
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": dynamic subgraph completed successfully
+2019/11/14 12:05:52 [TRACE] vertex "example_server.my-server": visit complete
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:05:52 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2019/11/14 12:05:52 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2019/11/14 12:05:52 [TRACE] [walkPlan] Entering eval tree: meta.count-boundary (EachMode fixup)
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "provider.example (close)"
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2019/11/14 12:05:52 [TRACE] vertex "provider.example (close)": starting visit (*terraform.graphNodeCloseProvider)
+2019/11/14 12:05:52 [TRACE] vertex "provider.example (close)": evaluating
+2019/11/14 12:05:52 [TRACE] [walkPlan] Entering eval tree: provider.example (close)
+2019/11/14 12:05:52 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2019/11/14 12:05:52 [TRACE] GRPCProvider: Close
+2019/11/14 12:05:52 [TRACE] [walkPlan] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2019/11/14 12:05:52 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2019-11-14T12:05:52.948+0530 [DEBUG] plugin: plugin process exited: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=22136
+2019-11-14T12:05:52.948+0530 [DEBUG] plugin: plugin exited
+2019/11/14 12:05:52 [TRACE] [walkPlan] Exiting eval tree: provider.example (close)
+2019/11/14 12:05:52 [TRACE] vertex "provider.example (close)": visit complete
+2019/11/14 12:05:52 [TRACE] dag/walk: visiting "root"
+2019/11/14 12:05:52 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2019/11/14 12:05:52 [TRACE] vertex "root": visit complete
+2019/11/14 12:05:52 [DEBUG] command: asking for input: "Do you want to perform these actions?"
+2019/11/14 12:06:00 [INFO] backend/local: apply calling Apply
+2019/11/14 12:06:00 [INFO] terraform: building graph: GraphTypeApply
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2019/11/14 12:06:00 [TRACE] ConfigTransformer: Starting for path: 
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+------
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.DiffTransformer
+2019/11/14 12:06:00 [TRACE] DiffTransformer starting
+2019/11/14 12:06:00 [TRACE] DiffTransformer: found Create change for example_server.my-server 
+2019/11/14 12:06:00 [TRACE] DiffTransformer: example_server.my-server will be represented by example_server.my-server
+2019/11/14 12:06:00 [TRACE] DiffTransformer complete
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.DiffTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+------
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.OrphanResourceTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.OrphanResourceTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2019/11/14 12:06:00 [TRACE] AttachResourceConfigTransformer: attaching to "example_server.my-server (prepare state)" (*terraform.NodeApplyableResource) config from main.tf:2,1-38
+2019/11/14 12:06:00 [TRACE] AttachResourceConfigTransformer: attaching to "example_server.my-server" (*terraform.NodeApplyableResourceInstance) config from main.tf:2,1-38
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2019/11/14 12:06:00 [DEBUG] Resource state not found for node "example_server.my-server", instance example_server.my-server
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.LocalTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.OutputTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+------
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2019/11/14 12:06:00 [DEBUG] adding implicit provider configuration provider.example, implied first by example_server.my-server (prepare state)
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2019/11/14 12:06:00 [TRACE] ProviderTransformer: example_server.my-server (prepare state) is provided by provider.example or inherited equivalent
+2019/11/14 12:06:00 [TRACE] ProviderTransformer: example_server.my-server is provided by provider.example or inherited equivalent
+2019/11/14 12:06:00 [TRACE] ProviderTransformer: exact match for provider.example serving example_server.my-server (prepare state)
+2019/11/14 12:06:00 [DEBUG] ProviderTransformer: "example_server.my-server (prepare state)" (*terraform.NodeApplyableResource) needs provider.example
+2019/11/14 12:06:00 [TRACE] ProviderTransformer: exact match for provider.example serving example_server.my-server
+2019/11/14 12:06:00 [DEBUG] ProviderTransformer: "example_server.my-server" (*terraform.NodeApplyableResourceInstance) needs provider.example
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2019/11/14 12:06:00 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2019/11/14 12:06:00 [TRACE] AttachSchemaTransformer: attaching resource schema to example_server.my-server (prepare state)
+2019/11/14 12:06:00 [TRACE] AttachSchemaTransformer: attaching resource schema to example_server.my-server
+2019/11/14 12:06:00 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.example
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2019/11/14 12:06:00 [DEBUG] ReferenceTransformer: "example_server.my-server (prepare state)" references: []
+2019/11/14 12:06:00 [DEBUG] ReferenceTransformer: "example_server.my-server" references: []
+2019/11/14 12:06:00 [DEBUG] ReferenceTransformer: "provider.example" references: []
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+------
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.RootTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.example (close) - *terraform.graphNodeCloseProvider
+------
+2019/11/14 12:06:00 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2019/11/14 12:06:00 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+example_server.my-server - *terraform.NodeApplyableResourceInstance
+  example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+example_server.my-server (prepare state) - *terraform.NodeApplyableResource
+  provider.example - *terraform.NodeApplyableProvider
+meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  example_server.my-server - *terraform.NodeApplyableResourceInstance
+provider.example - *terraform.NodeApplyableProvider
+provider.example (close) - *terraform.graphNodeCloseProvider
+  example_server.my-server - *terraform.NodeApplyableResourceInstance
+root - terraform.graphNodeRoot
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  provider.example (close) - *terraform.graphNodeCloseProvider
+------
+2019/11/14 12:06:00 [DEBUG] Starting graph walk: walkApply
+2019/11/14 12:06:00 [TRACE] dag/walk: updating graph
+2019/11/14 12:06:00 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:06:00 [TRACE] dag/walk: added new vertex: "provider.example (close)"
+2019/11/14 12:06:00 [TRACE] dag/walk: added new vertex: "root"
+2019/11/14 12:06:00 [TRACE] dag/walk: added new vertex: "example_server.my-server (prepare state)"
+2019/11/14 12:06:00 [TRACE] dag/walk: added new vertex: "example_server.my-server"
+2019/11/14 12:06:00 [TRACE] dag/walk: added new vertex: "provider.example"
+2019/11/14 12:06:00 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2019/11/14 12:06:00 [TRACE] dag/walk: added edge: "example_server.my-server (prepare state)" waiting on "provider.example"
+2019/11/14 12:06:00 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "example_server.my-server"
+2019/11/14 12:06:00 [TRACE] dag/walk: added edge: "provider.example (close)" waiting on "example_server.my-server"
+2019/11/14 12:06:00 [TRACE] dag/walk: added edge: "root" waiting on "provider.example (close)"
+2019/11/14 12:06:00 [TRACE] dag/walk: added edge: "example_server.my-server" waiting on "example_server.my-server (prepare state)"
+2019/11/14 12:06:00 [TRACE] dag/walk: dependencies changed for "provider.example (close)", sending new deps
+2019/11/14 12:06:00 [TRACE] dag/walk: dependencies changed for "example_server.my-server", sending new deps
+2019/11/14 12:06:00 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2019/11/14 12:06:00 [TRACE] dag/walk: dependencies changed for "example_server.my-server (prepare state)", sending new deps
+2019/11/14 12:06:00 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2019/11/14 12:06:00 [TRACE] dag/walk: visiting "provider.example"
+2019/11/14 12:06:00 [TRACE] vertex "provider.example": starting visit (*terraform.NodeApplyableProvider)
+2019/11/14 12:06:00 [TRACE] vertex "provider.example": evaluating
+2019/11/14 12:06:00 [TRACE] [walkApply] Entering eval tree: provider.example
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2019-11-14T12:06:00.443+0530 [INFO]  plugin: configuring client automatic mTLS
+2019-11-14T12:06:00.469+0530 [DEBUG] plugin: starting plugin: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe args=[D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe]
+2019-11-14T12:06:00.473+0530 [DEBUG] plugin: plugin started: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=8
+2019-11-14T12:06:00.473+0530 [DEBUG] plugin: waiting for RPC address: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe
+2019-11-14T12:06:00.705+0530 [INFO]  plugin.terraform-provider-example.exe: configuring server automatic mTLS: timestamp=2019-11-14T12:06:00.704+0530
+2019-11-14T12:06:00.728+0530 [DEBUG] plugin: using plugin: version=5
+2019-11-14T12:06:00.728+0530 [DEBUG] plugin.terraform-provider-example.exe: plugin address: network=tcp address=127.0.0.1:10000 timestamp=2019-11-14T12:06:00.728+0530
+2019/11/14 12:06:00 [TRACE] BuiltinEvalContext: Initialized "example" provider for provider.example
+2019/11/14 12:06:00 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:06:00 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2019/11/14 12:06:00 [TRACE] buildProviderConfig for provider.example: no configuration at all
+2019/11/14 12:06:00 [TRACE] GRPCProvider: GetSchema
+2019/11/14 12:06:00 [TRACE] GRPCProvider: Configure
+2019/11/14 12:06:00 [TRACE] [walkApply] Exiting eval tree: provider.example
+2019/11/14 12:06:00 [TRACE] vertex "provider.example": visit complete
+2019/11/14 12:06:00 [TRACE] dag/walk: visiting "example_server.my-server (prepare state)"
+2019/11/14 12:06:00 [TRACE] vertex "example_server.my-server (prepare state)": starting visit (*terraform.NodeApplyableResource)
+2019/11/14 12:06:00 [TRACE] vertex "example_server.my-server (prepare state)": evaluating
+2019/11/14 12:06:00 [TRACE] [walkApply] Entering eval tree: example_server.my-server (prepare state)
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalWriteResourceState
+2019/11/14 12:06:00 [TRACE] [walkApply] Exiting eval tree: example_server.my-server (prepare state)
+2019/11/14 12:06:00 [TRACE] vertex "example_server.my-server (prepare state)": visit complete
+2019/11/14 12:06:00 [TRACE] dag/walk: visiting "example_server.my-server"
+2019/11/14 12:06:00 [TRACE] vertex "example_server.my-server": starting visit (*terraform.NodeApplyableResourceInstance)
+2019/11/14 12:06:00 [TRACE] vertex "example_server.my-server": evaluating
+2019/11/14 12:06:00 [TRACE] [walkApply] Entering eval tree: example_server.my-server
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalSequence
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalReadDiff
+2019/11/14 12:06:00 [TRACE] EvalReadDiff: Read Create change from plan for example_server.my-server
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalIf
+2019/11/14 12:06:00 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalIf
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalReadState
+2019/11/14 12:06:00 [TRACE] EvalReadState: reading state for example_server.my-server
+2019/11/14 12:06:00 [TRACE] EvalReadState: no state present for example_server.my-server
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalReadDiff
+2019/11/14 12:06:00 [TRACE] EvalReadDiff: Read Create change from plan for example_server.my-server
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalDiff
+2019/11/14 12:06:00 [TRACE] Re-validating config for "example_server.my-server"
+2019/11/14 12:06:00 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2019/11/14 12:06:00 [TRACE] GRPCProvider: PlanResourceChange
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalCheckPlannedChange
+2019/11/14 12:06:00 [TRACE] EvalCheckPlannedChange: Verifying that actual change (action Create) matches planned change (action Create)
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalReadState
+2019/11/14 12:06:00 [TRACE] EvalReadState: reading state for example_server.my-server
+2019/11/14 12:06:00 [TRACE] EvalReadState: no state present for example_server.my-server
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalReduceDiff
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalIf
+2019/11/14 12:06:00 [TRACE] <root>: eval: terraform.EvalNoop
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalApplyPre
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalApply
+2019/11/14 12:06:00 [DEBUG] example_server.my-server: applying the planned Create change
+2019/11/14 12:06:00 [TRACE] GRPCProvider: ApplyResourceChange
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: panic: interface conversion: interface {} is nil, not string
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: goroutine 66 [running]:
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: main.resourceCreate(0xc0002d8770, 0x0, 0x0, 0x2, 0x1bb09c0)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/terraform-provider-example/resource_server.go:22 +0xae
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: github.com/hashicorp/terraform/helper/schema.(*Resource).Apply(0xc000148980, 0xc0000bb7c0, 0xc00026a800, 0x0, 0x0, 0xc0004fed01, 0x1b86f70, 0xf10120)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/helper/schema/resource.go:305 +0x3bb
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: github.com/hashicorp/terraform/helper/schema.(*Provider).Apply(0xc000148a00, 0xc00020da30, 0xc0000bb7c0, 0xc00026a800, 0xc0001f7828, 0xc000140148, 0xf12100)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/helper/schema/provider.go:289 +0x196
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: github.com/hashicorp/terraform/helper/plugin.(*GRPCProviderServer).ApplyResourceChange(0xc0001404c8, 0x1334da0, 0xc0004fe7e0, 0xc0000fcc60, 0xc0001404c8, 0xc0004fe7e0, 0xc00009fba8)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/helper/plugin/grpc_provider.go:885 +0x89b
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: github.com/hashicorp/terraform/internal/tfplugin5._Provider_ApplyResourceChange_Handler(0x1038440, 0xc0001404c8, 0x1334da0, 0xc0004fe7e0, 0xc0000bb4f0, 0x0, 0x1334da0, 0xc0004fe7e0, 0xc0001d6000, 0x61)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/internal/tfplugin5/tfplugin5.pb.go:3189 +0x245
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: github.com/hashicorp/terraform/vendor/google.golang.org/grpc.(*Server).processUnaryRPC(0xc0004fc600, 0x1340020, 0xc0004fcf00, 0xc0003ea400, 0xc00013c480, 0x1b874e0, 0x0, 0x0, 0x0)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/vendor/google.golang.org/grpc/server.go:998 +0x477
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: github.com/hashicorp/terraform/vendor/google.golang.org/grpc.(*Server).handleStream(0xc0004fc600, 0x1340020, 0xc0004fcf00, 0xc0003ea400, 0x0)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/vendor/google.golang.org/grpc/server.go:1278 +0xdad
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: github.com/hashicorp/terraform/vendor/google.golang.org/grpc.(*Server).serveStreams.func1.1(0xc0004549f0, 0xc0004fc600, 0x1340020, 0xc0004fcf00, 0xc0003ea400)
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/vendor/google.golang.org/grpc/server.go:717 +0xa6
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: created by github.com/hashicorp/terraform/vendor/google.golang.org/grpc.(*Server).serveStreams.func1
+2019-11-14T12:06:00.781+0530 [DEBUG] plugin.terraform-provider-example.exe: 	D:/go_workspace/src/github.com/hashicorp/terraform/vendor/google.golang.org/grpc/server.go:715 +0xa8
+2019/11/14 12:06:00 [DEBUG] example_server.my-server: apply errored, but we're indicating that via the Error pointer rather than returning it: rpc error: code = Unavailable desc = transport is closing
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalMaybeTainted
+2019/11/14 12:06:00 [TRACE] EvalMaybeTainted: example_server.my-server encountered an error during creation, so it is now marked as tainted
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalWriteState
+2019/11/14 12:06:00 [TRACE] EvalWriteState: removing state object for example_server.my-server
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalApplyProvisioners
+2019/11/14 12:06:00 [TRACE] EvalApplyProvisioners: example_server.my-server has no state, so skipping provisioners
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalMaybeTainted
+2019/11/14 12:06:00 [TRACE] EvalMaybeTainted: example_server.my-server encountered an error during creation, so it is now marked as tainted
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalWriteState
+2019/11/14 12:06:00 [TRACE] EvalWriteState: removing state object for example_server.my-server
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalIf
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalIf
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalWriteDiff
+2019/11/14 12:06:00 [TRACE] <root>: eval: *terraform.EvalApplyPost
+2019/11/14 12:06:00 [ERROR] <root>: eval: *terraform.EvalApplyPost, err: rpc error: code = Unavailable desc = transport is closing
+2019/11/14 12:06:00 [ERROR] <root>: eval: *terraform.EvalSequence, err: rpc error: code = Unavailable desc = transport is closing
+2019/11/14 12:06:00 [TRACE] [walkApply] Exiting eval tree: example_server.my-server
+2019/11/14 12:06:00 [TRACE] vertex "example_server.my-server": visit complete
+2019/11/14 12:06:00 [TRACE] dag/walk: upstream of "provider.example (close)" errored, so skipping
+2019/11/14 12:06:00 [TRACE] dag/walk: upstream of "meta.count-boundary (EachMode fixup)" errored, so skipping
+2019/11/14 12:06:00 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2019/11/14 12:06:00 [TRACE] statemgr.Filesystem: not making a backup, because the new snapshot is identical to the old
+2019/11/14 12:06:00 [TRACE] statemgr.Filesystem: no state changes since last snapshot
+2019/11/14 12:06:00 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2019/11/14 12:06:00 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2019/11/14 12:06:00 [TRACE] statemgr.Filesystem: unlocked by closing terraform.tfstate
+2019-11-14T12:06:00.789+0530 [DEBUG] plugin: plugin process exited: path=D:\go_workspace\src\github.com\terraform-provider-example\terraform-provider-example.exe pid=8 error="exit status 2"
+2019-11-14T12:06:00.789+0530 [DEBUG] plugin: plugin exited
